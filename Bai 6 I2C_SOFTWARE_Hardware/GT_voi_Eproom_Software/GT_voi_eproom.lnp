@@ -1,0 +1,12 @@
+--cpu Cortex-M3
+".\main.o"
+".\misc.o"
+".\stm32f10x_gpio.o"
+".\stm32f10x_rcc.o"
+".\stm32f10x_tim.o"
+".\startup_stm32f10x_md.o"
+".\system_stm32f10x.o"
+--strict --scatter ".\GT_voi_eproom.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\GT_voi_eproom.map" -o .\GT_voi_eproom.axf
