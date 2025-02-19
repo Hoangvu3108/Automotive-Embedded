@@ -36,4 +36,3 @@ void TIM_Config(){
 	TIM_Cmd(TIM2,ENABLE);
 	
 }
-// dÙNG ĐƯỢC NHA
